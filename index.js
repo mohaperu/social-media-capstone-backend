@@ -247,4 +247,8 @@ app.post('/register', (request, response) => {
     })
 })
 
+app.get('/profile', function(req, res, next) {
+    res.send(users);
+  });
+
 app.listen(PORT, () => console.log("The Server is starts in ", PORT));
